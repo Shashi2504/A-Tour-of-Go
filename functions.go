@@ -1,12 +1,15 @@
 package main
-import (
-	"fmt"
-)
+import "fmt"
 
-func add(x int, y int) int {
-	return x + y
+func applyFunction(fn func(int) int, value int) int {
+	return fn(value)
+}
+
+func double(x int) int {
+	return x * 2
 }
 
 func main() {
-	fmt.Println(add(23234, 1232))
+	result := applyFunction(double, 5)
+	fmt.Println(result)
 }
