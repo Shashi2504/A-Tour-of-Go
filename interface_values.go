@@ -1,37 +1,41 @@
 package main
-import "fmt"
 
-type Make interface {
-	Ice()
+import (
+	"fmt"
+	"math"
+)
+
+type I interface {
+	Make()
 }
 
-type fake struct {
-	Sea string
+type Take struct {
+	Stake string
 }
 
-type hein float64
-
-func (f *fake) Ice() {
-	fmt.Println(f.Sea)
+func (t *Take) Make() {
+	fmt.Println(t.Stake)
 }
 
-func (h hein) Ice() {
-	fmt.Println(h)
-}
+type Fake float64
 
+func (f Fake) Make() {
+	fmt.Println(f)
+}
 
 func main() {
-	 var ming Make
+	var i I
 
-	 ming = &fake("HUHUHHUHUUHHUUHHHHHHHhhhhh")
-	 describe(ming)
-	 ming.Ice()
+	i = &Take{"Hello"}
+	describe(i)
+	i.Make()
 
-	 ming = hein(math.Pi)
-	 describe(ming)
-	 ming.Ice()
+	i = Fake(math.Pi)
+	describe(i)
+	i.Make()
 }
 
-func describe(ming Make) {
-	fmt.Println("()")
+func describe(i I) {
+	fmt.Printf("(%v, %T)\n", i, i)
 }
+
