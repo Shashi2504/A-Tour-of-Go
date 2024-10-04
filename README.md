@@ -46,3 +46,30 @@ To get started, follow these steps:
    ```bash
    git clone https://github.com/yourusername/a-tour-of-go.git
    cd a-tour-of-go
+
+2. **Prerequisites**
+   • Install [Go](https://go.dev/doc/install#:~:text=Download%20and%20install%20Go%20quickly%20with%20the%20steps%20described%20here.) on your machine.
+   • Familiarity with basic programming concepts (variables, functions, etc.) is beneficial but not required.
+
+3. **Explore the file**
+   • Navigate through the folders to explore different topics.
+   • Open the README.md files in each section for detailed explanations and usage instructions.
+
+4. **Try out the code**
+   • Each section contains example code files. Feel free to run, modify, and experiment with them to deepen your understanding.
+
+## Learning Path
+We recommend following the sections in order, as each topic builds on the previous ones. However, you can also explore specific areas based on your interests.
+
+## Contributing
+We welcome contributions! If you'd like to help improve this repository, please follow these steps:
+   - Fork the repository.
+   - Create a new branch for your feature or fix.
+   - Commit your changes.
+   - Push to the branch and create a pull request.
+Your contributions can help make this repository an even better resource for learners!
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Thank you for checking out A Tour of Go! We hope you find this repository helpful in your journey to mastering Go Lang. Happy coding! 🎉
