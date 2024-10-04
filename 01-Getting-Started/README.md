@@ -17,7 +17,7 @@ Welcome to the first section of the **"A Tour of Go"** repository! This section 
 | File Name    | Description                                                          |
 |--------------|----------------------------------------------------------------------|
 | `hello.go`   | A simple "Hello, World!" program to kickstart your Go journey.        |
-| `sandbox.go` | A playground file where you can experiment with Go code freely.       |
+| `sandbox.go` | A playground file prints a welcome message followed by the current date and time.       |
 
 ---
 
