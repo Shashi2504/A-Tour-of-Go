@@ -1,6 +1,6 @@
 # A Tour of Go: Your Comprehensive Guide to Learning Go Lang
 
-![Go](https://img.shields.io/badge/Go-1.17-blue.svg)
+![Go](https://img.shields.io/badge/Go-1.19-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![GitHub Stars](https://img.shields.io/github/stars/yourusername/a-tour-of-go?style=social)
 
