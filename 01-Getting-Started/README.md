@@ -7,7 +7,7 @@ Welcome to the first section of the **"A Tour of Go"** repository! This section 
 ## 🌟 What You'll Learn
 
 - ✅ Setting up your Go environment.
-- ✅ Writing your first "Hello, World!" program in Go.
+- ✅ Writing your first "Let's begin our Go Lang Journey" program in Go.
 - ✅ Exploring Go's playground (`sandbox.go`) to experiment with code.
 
 ---
@@ -16,7 +16,7 @@ Welcome to the first section of the **"A Tour of Go"** repository! This section 
 
 | File Name    | Description                                                          |
 |--------------|----------------------------------------------------------------------|
-| `hello.go`   | A simple "Hello, World!" program to kickstart your Go journey.        |
+| `hello.go`   | A simple "Lets begin our Go Lang" program to kickstart your Go journey.        |
 | `sandbox.go` | A playground file prints a welcome message followed by the current date and time.       |
 
 ---
