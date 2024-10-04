@@ -1,5 +1,5 @@
 package main
 import "fmt"
 func main() {
-	fmt.Println("A Tour of Go")
+	fmt.Println("Hey!! Let's Begin our Go Lang Journey")
 }
