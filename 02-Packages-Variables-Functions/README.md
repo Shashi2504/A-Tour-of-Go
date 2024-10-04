@@ -16,17 +16,17 @@ Welcome to the **Packages, Variables, and Functions** section of the repository!
 | `packages.go`       | Explains how packages work in Go.                                              |
 | `imports.go`       | Shows how to import packages in Go.                                             |
 | `export_names.go`         | Explains exported names and how to use them across packages.             |
-| `var_init.go`         | Demonstrates variable declaration and initialization.                        |
-| `basic_types.go`      | Introduces Go's basic data types (int, float, string, etc.).                 |
-| `conversion.go`     | Demonstrates type conversion in Go.                                            |
+| `multi_resu.go`         | Shows how to handle multiple return values from functions.                 |
 | `named_return.go`     | Shows how to use named return values in functions.                           |
-| `short_var_dec.go`    | Demonstrates short variable declaration using `:=`.                          |
 | `variables.go`        | Explains variable declarations and their scope.                              |
-| `contants.go`         | Introduces the concept of constants in Go.                                   |
-| `multi_resu.go`          | Shows how to handle multiple return values from functions.                                          |
-| `numeric_constants.go`| Demonstrates numeric constants and their usage in Go.                        |
-| `type_inference.go`   | Explains how Go performs type inference during variable initialization.      |
+| `var_init.go`          |  Demonstrates variable declaration and initialization.                      |
+| `short_var_dec.go`    | Demonstrates short variable declaration using `:=`.                          |
+| `basic_types.go`      | Introduces Go's basic data types (int, float, string, etc.).                 |
 | `zero_values.go`      | Shows how variables are automatically initialized to zero values in Go.      |
+| `conversion.go`     | Demonstrates type conversion in Go.                                            |
+| `type_inference.go`   | Explains how Go performs type inference during variable initialization.      |
+| `contants.go`         | Introduces the concept of constants in Go.                                   |
+| `numeric_constants.go`| Demonstrates numeric constants and their usage in Go.                        |
 
 ## Key Concepts
 
