@@ -1,6 +1,6 @@
 # A Tour of Go: Your Comprehensive Guide to Learning Go Lang ![Go Version](https://img.shields.io/badge/Go-1.23.2-blue.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-![A Tour of Go](ATourofGo-01.jpg)
+![A Tour of Go](Images/ATourofGo-01.jpg)
 
 Welcome to **A Tour of Go**, a comprehensive Git repository designed to help beginners and intermediate learners understand Go Lang in a clear and structured way. This repository offers detailed explanations, real-world examples, coding exercises, and visual aids to enhance your learning experience without the need for paid courses.
 
