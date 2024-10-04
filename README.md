@@ -6,7 +6,7 @@ Welcome to **A Tour of Go**, a comprehensive Git repository designed to help beg
 
 ---
 
-## Table of Contents 📚
+## Table of Contents 🗺️
 - [Introduction](#introduction)
 - [Repository Structure](#repository-structure)
 - [Getting Started](#getting-started)
@@ -59,10 +59,10 @@ To get started, follow these steps:
 4. **Try out the code**
    - Each section contains example code files. Feel free to run, modify, and experiment with them to deepen your understanding.
 
-## Learning Path🛤️
+## Learning Path 🛤️
 We recommend following the sections in order, as each topic builds on the previous ones. However, you can also explore specific areas based on your interests.
 
-## Contributing🤝
+## Contributing 🤝
 We welcome contributions! If you'd like to help improve this repository, please follow these steps:
    - Fork the repository.
    - Create a new branch for your feature or fix.
@@ -70,13 +70,13 @@ We welcome contributions! If you'd like to help improve this repository, please 
    - Push to the branch and create a pull request.
 Your contributions can help make this repository an even better resource for learners!
 
-## Resources📚
+## Resources 📚
 For additional learning, check out these resources:
 - [Offical Go Documentation](https://golang.org/doc/)
 - [Go by Example](https://gobyexample.com/)
 - [Effective Go](https://go.dev/doc/effective_go)
 
-## License📜
+## License 📜
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 
