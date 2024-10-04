@@ -1,4 +1,4 @@
-# A Tour of Go: Your Comprehensive Guide to Learning Go Lang ![Go Version](https://img.shields.io/badge/Go-1.23.2-blue.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# A Tour of Go: Your Comprehensive Guide to Learning Go Lang ![Go Version](https://img.shields.io/badge/Go-1.23.2-blue.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg) [License](LICENSE)
 
 ![A Tour of Go](ATourofGo-01.jpg)
 
