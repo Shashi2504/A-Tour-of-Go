@@ -72,4 +72,5 @@ Your contributions can help make this repository an even better resource for lea
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Thank you for checking out A Tour of Go! We hope you find this repository helpful in your journey to mastering Go Lang. Happy coding! 🎉
+
+𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝗰𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗼𝘂𝘁 𝗔 𝗧𝗼𝘂𝗿 𝗼𝗳 𝗚𝗼! 𝗪𝗲 𝗵𝗼𝗽𝗲 𝘆𝗼𝘂 𝗳𝗶𝗻𝗱 𝘁𝗵𝗶𝘀 𝗿𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 𝗵𝗲𝗹𝗽𝗳𝘂𝗹 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗷𝗼𝘂𝗿𝗻𝗲𝘆 𝘁𝗼 𝗺𝗮𝘀𝘁𝗲𝗿𝗶𝗻𝗴 𝗚𝗼 𝗟𝗮𝗻𝗴. 𝗛𝗮𝗽𝗽𝘆 𝗰𝗼𝗱𝗶𝗻𝗴! 🎉
