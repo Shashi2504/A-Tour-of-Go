@@ -48,15 +48,15 @@ To get started, follow these steps:
    cd a-tour-of-go
 
 2. **Prerequisites**
-   • Install [Go](https://go.dev/doc/install#:~:text=Download%20and%20install%20Go%20quickly%20with%20the%20steps%20described%20here.) on your machine.
-   • Familiarity with basic programming concepts (variables, functions, etc.) is beneficial but not required.
+   - Install [Go](https://go.dev/doc/install#:~:text=Download%20and%20install%20Go%20quickly%20with%20the%20steps%20described%20here.) on your machine.
+   - Familiarity with basic programming concepts (variables, functions, etc.) is beneficial but not required.
 
 3. **Explore the file**
-   • Navigate through the folders to explore different topics.
-   • Open the README.md files in each section for detailed explanations and usage instructions.
+   - Navigate through the folders to explore different topics.
+   - Open the README.md files in each section for detailed explanations and usage instructions.
 
 4. **Try out the code**
-   • Each section contains example code files. Feel free to run, modify, and experiment with them to deepen your understanding.
+   - Each section contains example code files. Feel free to run, modify, and experiment with them to deepen your understanding.
 
 ## Learning Path
 We recommend following the sections in order, as each topic builds on the previous ones. However, you can also explore specific areas based on your interests.
