@@ -129,7 +129,7 @@ fmt.Println(s)    // Output: Hello
 
   **5. Type Conversion Between Custom Types:** If you define your own types, you can convert values between those types if they share the same underlying type.
 
-  **Example with `strconv` for String Conversion**
+### Example with `strconv` for String Conversion
 
   If you want to convert a number to a string, you can use the `strconv` package:
   ```go
