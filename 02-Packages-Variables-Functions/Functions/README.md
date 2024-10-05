@@ -32,7 +32,7 @@ In this example:
 To call a function, you just use it name followed by parenthesis with the required arguments (if any):
 
 ```go
-greeting := great("Go mate")
+greeting := greet("Go mate")
 fmt.Println(greeting)    // Output: Hello, Go mate
 ```
 
