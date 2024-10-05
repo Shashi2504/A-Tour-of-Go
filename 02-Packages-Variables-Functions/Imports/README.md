@@ -21,7 +21,7 @@ Here, we import `fmt` to use its `Println function`.
 
 ### Importing Multiple Packages
 
-If you need more than one package, you can import multiple packages by listing them inside paranthesis. This is called a factored import:
+If you need more than one package, you can import multiple packages by listing them inside paranthesis. This is called a 𝗳𝗮𝗰𝘁𝗼𝗿𝗲𝗱 𝗶𝗺𝗽𝗼𝗿𝘁:
 
 ```go
 import (
@@ -42,7 +42,7 @@ After importing, you can access it functions and types.
 
 ### Alias Imports
 
-You can assign a shorter or more meaningful alias to a package name using the `import` staement. This can make your code cleaner:
+You can assign a shorter or more meaningful alias to a package name using the `import` statement. This can make your code cleaner:
 
 ```go
 import fm "fmt"
@@ -55,7 +55,7 @@ Here, `fm` is an alias for `fmt` package.
 
 ### Blank Imports
 
-Sometimes, you need to import a package for its side effects (like running initialization code) but don't need to use any of its functions directly. In such cases, you can use a blank import by using an underscore (`_`):
+Sometimes, you need to import a package for its side effects (like running initialization code) but don't need to use any of its functions directly. In such cases, you can use a 𝗯𝗹𝗮𝗻𝗸 𝗶𝗺𝗽𝗼𝗿𝘁 by using an underscore (`_`):
 
 ```go
 import _ "some/package"
