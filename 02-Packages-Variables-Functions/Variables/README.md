@@ -93,7 +93,7 @@ In this example:
   - `a` is the integer (`int`), and we're converting it into a floating-point number (float64).
   - After conversionm the value of `b` will be `42.0` as a float.
 
-### Main Points
+## Main Points
 
   **1. Explicit Conversion Required:** Go does not perform automatic type conversion between different types, even if it seems like they might be compatible (e.g. between `int` and `float64`). You must directly convert between types.
 
