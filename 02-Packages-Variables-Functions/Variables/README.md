@@ -140,7 +140,51 @@ var text string = str.conv.Itoa(num)    // Itoa converts int to string
 fmt.Println(text)
 ```
 
+## Type Inference
 
+In Go, **type inference** is a feature that allows a Go compiler to automatically determine the type of variable based on the value assigned to it, rather than requiring you to directly specify the type. This makes variable declarations more concise and easier to read.
+
+### How Type Inference Works
+
+When you use the short variable declaration syntax `:=`, the Go compiler indicate the type from the right-hand side expression. Here's how it works:
+
+### Example of Type Inference
+
+```go
+x := 42    // x is indicated as int
+y := 3.14    // y is indicated as float64
+name :=  "Paaaaaaaapp!!"    // name is indicated as string
+isAvailable := true    // isAvailable is indicated as boolean
+```
+In this example:
+  - `x` is indicated to be of type `int` because it's assigned an integer value
+  - `y` is indicated to be `float64` because it's assigned a floating-point value
+  - `name` is indicated as `string` and `isAvailable` as `bool`
+
+### Points to Note
+
+  **1. No Direct Type Required:** You don't need to directly specify the type when using `:=`. The compiler takes care of it, which simplifies code writing.
+  
+  **2. Type Inference Only on Declaration:** Type Inference happens only when you are declaring a new variable. If you use the `var` keyword for an existing variable, you must specify its type:
+
+  ```go
+var a = 10    // Here, a is indicated as int
+var b int    // Here, you must explicitly specify the type
+```
+  **3. Complex Expressions:** Type inference works well with more complex expressions too. For example:
+
+  ```go
+c := 10 + 5.5    // c is indicated as float64
+```
+In this case, the result of `10 + 5.5` is a floating-point number, so `c` becomes `float64`.
+
+  **4. Composite Types:** Type inference also works with composite types like slices, maps, and structs.
+
+  ```go
+mySlice := []int{1, 2, 3}    //mySlice is indicated as []int
+myMap := map[string]int{"Level": 1}    // myMap is indicated as map[string]int
+```
+  
 ## Constants
 
 You can also declare **constants** using the `const` keyword. Constants are variables whose values cannot be changed:
@@ -154,4 +198,7 @@ const pi = 3.14
   - Variables are declared using `var` and you can use `:=` for shorthand declarations.
   - Go variables are statically typed, and types are either directly stated.
   - Variables have zero values if not initialized.
+  - Type conversion in Go is explicit; you must use `newType(value)` to convert between types.
+  - For string and numeric conversions, the `strconv` package is often used.
+  - Type inference in Go simplifies variable declarations by allowing the compiler to automatically determine the type based on the assigned value.
   - Constants are immutable and declared with `const`.
