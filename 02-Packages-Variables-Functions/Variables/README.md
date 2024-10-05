@@ -184,14 +184,6 @@ In this case, the result of `10 + 5.5` is a floating-point number, so `c` become
 mySlice := []int{1, 2, 3}    //mySlice is indicated as []int
 myMap := map[string]int{"Level": 1}    // myMap is indicated as map[string]int
 ```
-  
-## Constants
-
-You can also declare **constants** using the `const` keyword. Constants are variables whose values cannot be changed:
-
-```go
-const pi = 3.14
-```
 
 ## Recap
 
@@ -201,4 +193,3 @@ const pi = 3.14
   - Type conversion in Go is explicit; you must use `newType(value)` to convert between types.
   - For string and numeric conversions, the `strconv` package is often used.
   - Type inference in Go simplifies variable declarations by allowing the compiler to automatically determine the type based on the assigned value.
-  - Constants are immutable and declared with `const`.
