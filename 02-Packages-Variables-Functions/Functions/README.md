@@ -4,7 +4,7 @@ In Go, a **function** is a block of code that performs a specific task. Function
 
 ## Defining a Function
 
-To define a function in Go, you use the `func` keyword followed by the function name, a list of parameters (if any), and the return type (if any). The function body is enclosed by curly brraces `{}`.
+To define a function in Go, you use the `func` keyword followed by the function name, a list of parameters (if any), and the return type (if any). The function body is enclosed by curly braces `{}`.
 
 Here's the basic structure:
 
