@@ -97,9 +97,13 @@ func (p *Person) HaveBirthday() {
 
 p := Person {
       Name: "Mazaaav",
-      p.HaveBirthday()
-      fmt.Println(p.Age)
+      Age: 25,
+      City: "Japan"
+      Grade: 7.2
 }
+
+p.HaveBirthday()
+fmt.Println(p.Age)      // Output: 26 (original value is modified)
 ```
 By using a pointer receiver (`*Person`), the `HaveBirthday` method updates the original `Age` field directky.
 
