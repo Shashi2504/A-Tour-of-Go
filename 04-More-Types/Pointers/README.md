@@ -21,7 +21,7 @@ fmt.Println(*p)   // Output will be: 10 (the value at the memory address p point
 - `p` is a pointer to x, meaning `p` stores the address of `x`.
 - `*p` is called dereferencing the pointer, which allows you to access the value stored at the address `p` points to.
 
-## Why Use Pointer?
+## Why Use Pointers?
 
 **1. Modifying Values:** If you pass a variable in a fucntion, a copy of the value is passed, and changes indside the function won't affect the original variable. However, with pointers, you can modify the original variable.
 
