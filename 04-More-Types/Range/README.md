@@ -54,7 +54,7 @@ Name: Saibood Age: 30
 Again , you can ignore either the key or the value by using an underscore (`_`):
 
 ```go
-for _, age := rnage ages {
+for _, age := range ages {
       fmt.Println("Age: %d", age)
 }
 ```
