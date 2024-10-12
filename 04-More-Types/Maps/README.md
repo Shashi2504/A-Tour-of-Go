@@ -76,7 +76,7 @@ Memiii age is 25 years old
 
 ## Zero Value for a Map
 
-Teh zero value of map is `nil`, meaning it hasn't been initialized yet. If you try to read from a nil map, it will behave as if it's empty, but adding elements to a nil map will cause the run-time error.
+The zero value of map is `nil`, meaning it hasn't been initialized yet. If you try to read from a nil map, it will behave as if it's empty, but adding elements to a nil map will cause the run-time error.
 
 ## Key Points about Maps
 
