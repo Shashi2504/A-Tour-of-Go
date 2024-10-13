@@ -64,16 +64,16 @@ Since `Scale` is defined with a pointer receiver, it modifies the original `rect
 
 - Methods can be defined on any type, not just `struct` types. For example, you can define methods on custom types like this:
 
-```go
-type MyInt int
+    ```go
+    type MyInt int
 
-func (m MyInt) Double() int {
+    func (m MyInt) Double() int {
     return int(m * 2)
-}
+    }
 
-num := MyInt(5)
-fmt.Println(num.Double())    // Output: 10
-```
+    num := MyInt(5)
+    fmt.Println(num.Double())    // Output: 10
+    ```
 In this case, `Double` is a method on the custom `MyInt` type, and it returns double the value of the integer.
 
 ## Key Points
