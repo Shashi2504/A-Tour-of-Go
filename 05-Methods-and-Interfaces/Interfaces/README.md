@@ -189,6 +189,96 @@ Type switches are particularly useful when working with **interfaces** that can 
   ```
 Both approches are useful, but type switches provide a more elegant solution when you have multiple possible types.
 
+# Go Stringers
+
+In Go, a **Stringer** is an interface from the `fmt` package that defines how a type should be represented as a string when printed using functions like `fmt.Prinln()`, `fmt.Prinf()` etc. It allows you to control the output when your custom types are printed.
+
+## Stringer Interface 
+
+The `Stringer` interface is very simple, consisting of just one method:
+
+```go
+tyep Stringer interface {
+   String() string
+}
+```
+Any type that implements this `String()` method automatically satisfies the `fmt.Stringer` interface. When you print values of this type using `fmt` functions, Go will call the `String()` method to determine the string representation.
+
+## Example of Impelementing `Stringer`
+
+Here's an example where we  define a custom type and implement the `String()` method:
+
+```go
+package main
+
+imprt "fmt"
+
+// Define a custom type
+type Person struct {
+    Name string
+    Age int
+}
+
+// Implement the Stringer interafce for the Perso type
+func (p Person) String() string {
+   return fmt.Printf("%s is %d years old", p.Name, p.Age)
+}
+
+func main() {
+    p := Person{Name: "Heeru", Age: 36}
+
+    // When printing p, Go will automatically use the String() method
+    fmt.Println(p)    // Output: Heeru is 36 years old
+}
+```
+In this example:
+- We creatd a custom type `Person`.
+- We implemented the `String()` method to specify how a `Person` should be printed as: "Name is Age years old".
+- When `fmt.Println(p)` is called, it prints the result of `p.String()` automatically.
+
+## Why Use the `Stringer` interface?
+
+1. **Custom Formatting:** It allows you to define how your types should be printed, giving you full control over their string representation.
+
+2. **Cleaner Code:** Instead of calling custom formatting functions every time you print a type, implementing `Stringer` ensures that formatting is built-in, making the code cleaner and easier to maintain.
+
+3. **Integration with fmt Package:** The `fmt` package recognizes the `Stringer` interface, meaning it will always use the `String()` method when printing types that implement it.
+
+### Another Example
+
+Let's consider another custom type, `Coordinate`, and implement `Stringer` to customize its string output:
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+type Coordinate struct {
+    X, Y int
+}
+
+func (c Coordinate) String() string {
+    return fmt.Sprintf("(%d, %d)", c.X, c.Y)
+}
+
+func main() {
+    point := Coordinate{X: 10, Y: 20}
+    fmt.Println(point) // Output: (10, 20)
+}
+```
+Here:
+
+- The `Coordinate` type has `X` and `Y` fields.
+- The `String()` method formats the coordinates as `"(X, Y)"`.
+- When printing point, Go automatically uses the `String()` method to output `(10, 20)`.
+
+### Final things
+- The Stringer interface is part of the fmt package and contains just one method: `String() string`.
+- Implementing `Stringer` allows you to define how your custom types are converted to strings when printed.
+- Go's `fmt` package automatically uses the `String()` method for any type that implements `Stringer`.
+
 ## Practical Use Cases
 
 Interfaces are particularly useful for:
