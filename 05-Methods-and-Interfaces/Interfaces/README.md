@@ -104,6 +104,91 @@ describe(Person{name: "Reveee"})    // Output: This is a person named Reveee
 ```
 In this example, we check if the `Speaker` interface contains a `Person` type using `s.(Person)`. If it does, we can access the specific `Person` fields.
 
+## Type Switches
+
+A **type switch** in Go is a special form of the `switch` statement that allows you to compare the dynamic type of an interface value against several potential types. It's particularly useful when you have an interface and want to perform different actions based on the concrete type stored in that interface.
+
+## How a Type Switch Works
+
+A type switch uses the `.(type)` syntax to inspect the type of a value held by an interface. You can then match the dynamic type to different cases in thhe switch statement.
+
+Here's the general form of a type switch:
+
+```go
+switch v := i.(type) {
+case int:
+    fmt.Println("i is an integer:", v)
+case string:
+    fmt.Println("i is a string:", v)
+case bool:
+    fmt.Println("i is a boolean:", v)
+default:
+    fmt.Println("i is of an unknwwon type")
+}
+```
+- i.(type) is the special syntax used in type switches.
+- `v := i.(type)` assigns the value `i` to `v` with the concrete type found in each case.
+- Each `case` checks if `i` is a particular type.
+-  If none of the cases match, the `default` block runs.
+
+**Example of Type Switch in Action**
+
+Let's take a look at a real example:
+
+ ```go
+func printType(i interafce{}) {
+    switch v := i.(type) {
+    case int:
+      fmt.Printf("Integer: %d\n", v)
+    case string:
+      fmt.Printf("String: %s\n", v)
+    case bool:
+      fmt.Printf("Boolean: %t\n", v)
+    default:
+      fmt.Println("Unknown type")
+   }
+}
+
+func main() {
+    printType(24)   // Output: Integer: 24
+    printType("Hello")  // Output: String: Hellp
+    printType(true)   // Output: Boolean: true
+    printType(3.14)   // Output: Unknown type
+}
+```
+Here, the `printType` function accepts an `interface{}`, which can hold any type. The type switch then mathes the type of the argument to different cases : `int`, `string`, and `bool`. If none of these types match (like when passing 3.14, which is a float), the `default`case is executed.
+
+## Key Points
+
+- **Type switches** allow you to perform actions based on the type of an interface value.
+- You can handle multiple values in a clean and readable way.
+- The special `.(type)` syntax is used to extarct the dynamic type of an interface.
+- **Default case** is used when none of the specified types match.
+
+## Why Use Type Switches?
+
+Type switches are particularly useful when working with **interfaces** that can hold different types. Instead of susing multiple type asserions (`i.(type)`) with `if` statements, you can handle everything neatly with one `switch`.
+
+## Comparison with Type Assertions
+
+- **Type assertions:** Used when you expect the interface to hold one specific type.
+  ```go
+  s, ok := i.(string)
+  if ok {
+    fmt.Println("i is a string:", s)
+  }
+  ```
+- **Type switch:** Used when you want to handle multiple types:
+  ```go
+  switch i.(type) {
+  case string:
+    fmt.Println("i is a string")
+  case int:
+    fmt.Println("i is a integer")
+  }
+  ```
+Both approches are useful, but type switches provide a more elegant solution when you have multiple possible types.
+
 ## Practical Use Cases
 
 Interfaces are particularly useful for:
