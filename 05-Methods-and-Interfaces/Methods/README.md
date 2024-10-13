@@ -74,7 +74,7 @@ Since `Scale` is defined with a pointer receiver, it modifies the original `rect
     num := MyInt(5)
     fmt.Println(num.Double())    // Output: 10
     ```
-In this case, `Double` is a method on the custom `MyInt` type, and it returns double the value of the integer.
+    In this case, `Double` is a method on the custom `MyInt` type, and it returns double the value of the integer.
 
 ## Key Points
 - Methods allow you to define function that belong to specific types.
